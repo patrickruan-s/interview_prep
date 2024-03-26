@@ -1,1 +1,8 @@
 <div>hi</div>
+<div>
+    <% @nba_rosters.each do |nba_roster| %>
+        <div class='row'>
+            <h1><%= nba_roster.name %><h2>
+        </div>
+    <% end %>
+</div>

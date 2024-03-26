@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root 'users#index'
+
+  resources :users
   resources :nba_rosters
-  root 'nba_rosters#index'
   resources :nba_players
 end
 
